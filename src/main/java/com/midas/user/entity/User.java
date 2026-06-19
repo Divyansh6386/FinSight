@@ -1,5 +1,7 @@
 package com.midas.user.entity;
 
+
+
 import com.midas.common.entity.BaseEntity;
 import com.midas.user.enums.Role;
 import jakarta.persistence.*;
@@ -30,15 +32,15 @@ public class User extends BaseEntity {
     private String password;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
     @Builder.Default
     private Role role = Role.ROLE_USER;
 
     @Column(nullable = false)
     @Builder.Default
-    private Boolean enabled = true;
+    private boolean enabled = true;
 
     @Column(name = "account_locked", nullable = false)
     @Builder.Default
-    private Boolean accountLocked = false;
+    private boolean accountLocked = false;
 }
