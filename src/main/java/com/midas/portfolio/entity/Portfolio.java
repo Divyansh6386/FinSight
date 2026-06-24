@@ -4,6 +4,9 @@ import com.midas.common.entity.BaseEntity;
 import com.midas.user.entity.User;
 import jakarta.persistence.*;
 import lombok.*;
+import com.midas.portfolio.entity.Portfolio;
+import com.midas.portfolio.repository.PortfolioRepository;
+import java.util.Optional;
 
 import java.math.BigDecimal;
 

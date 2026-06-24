@@ -4,7 +4,6 @@ import com.midas.user.dto.request.ChangePasswordRequest;
 import com.midas.user.dto.request.UpdateProfileRequest;
 import com.midas.user.dto.response.UserProfileResponse;
 import com.midas.user.entity.User;
-import com.midas.user.dto.request.ChangePasswordRequest;
 
 import java.util.Optional;
 
